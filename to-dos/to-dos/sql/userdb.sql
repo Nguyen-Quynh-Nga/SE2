@@ -1,0 +1,13 @@
+/* Create new database */
+CREATE DATABASE USERDB;
+/* Use this database */
+USE USERDB;
+/* Create new table */
+CREATE TABLE USER (
+ID INT NOT NULL AUTO_INCREMENT,
+NAME VARCHAR(30) NOT NULL,
+ADDRESS VARCHAR(50) NOT NULL,
+MOBILE VARCHAR(10) NOT NULL,
+PRIMARY KEY(ID));
+/* Insert data to this table */
+INSERT INTO USER (NAME, ADDRESS, MOBILE) VALUE ("Hoàng", "Hà Nội", "0912345678"), ("Minh", "Đà Nẵng", "0988888888"), ("Phương", "HCM", "0986868686");
